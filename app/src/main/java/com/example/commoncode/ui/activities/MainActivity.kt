@@ -1,19 +1,28 @@
 package com.example.commoncode.ui.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.example.commoncode.R
-import com.example.commoncode.data.adapters.RecyclerViewWithDiffUtils
-import com.example.commoncode.data.models.Person
+import com.example.commoncode.domain.utils.Extensions.showToast
 
 class MainActivity : AppCompatActivity() {
-//    private val adapter by lazy{
+    //    private val adapter by lazy{
 //        RecyclerViewWithDiffUtils()
 //    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        showToast { resources.getString(R.string.app_name) }
+
+//        viewLifeCycleOwner.lifeCycleScope.launchWhenStarted {
+//            binding.userName.textChange().debounce(400L).collect {
+//                it:Editable?
+//                Log.d(TAG, ” onCreate $it”)
+//            }
+//        }
+
     }
 
 //    private fun setRecyclerViewWithDiffUtilsAdapter(){
