@@ -1,6 +1,7 @@
 package com.example.commoncode.beforeproduction
 
 //points to checks in every build:
+//-> Update all dependencies and gradle, kotlin versions
 //-> checking ad ids of release and debug.
 //-> remote config values
 //-> analytics and crashlytics
@@ -19,10 +20,19 @@ package com.example.commoncode.beforeproduction
 //-> add Glide performance tag
 //-> check shrinkResources and minifyEnabled true in buildTypes release gradle file
 //-> check READ_MEDIA_IMAGES, READ_MEDIA_VIDEO and READ_MEDIA_AUDIO permission in Android 13 if these permissions are used in project
+//-> Add resizeableActivity, hardwareAccelerated, largeHeap, usesCleartextTraffic in manifest Application Tag
+//-> Check force update
 
 /**
  * Manifest
  */
+
+//Add these in application tag
+//
+//android:resizeableActivity="false"
+//android:hardwareAccelerated="true"
+//android:largeHeap="true"
+//android:usesCleartextTraffic="true"
 
 //<meta-data
 //android:name="com.google.android.gms.ads.APPLICATION_ID"
