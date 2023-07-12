@@ -71,6 +71,24 @@ package com.example.commoncode.beforeproduction
  * App Gradle
  */
 
+// For crashlytics enable and disable
+//buildTypes {
+//    release {
+//        minifyEnabled true
+//        shrinkResources true
+//        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//
+//        manifestPlaceholders["crashlyticsCollectionEnabled"] = true
+//    }
+//    debug {
+//        minifyEnabled false
+//        shrinkResources false
+//        proguardFiles getDefaultProguardFile ('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//
+//        manifestPlaceholders["crashlyticsCollectionEnabled"] = false
+//    }
+//}
+
 //lintOptions {
 //    checkReleaseBuilds true
 //    abortOnError true
