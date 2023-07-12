@@ -10,7 +10,10 @@ class ServiceTask {
 //    <service
 //    android:name="com.antivirus.scanner.virus.detector.services.ProtectionService"
 //    android:enabled="true"
-//    android:stopWithTask="false" />
+//    android:stopWithTask="false"
+//    android:process=":ServiceProcess"
+//    android:isolatedProcess="true"
+//    />
 
 /**
  * Service Class
@@ -40,4 +43,11 @@ class ServiceTask {
 //    If you want to prevent the service from being stopped when the task is removed, you can set the stopWithTask property to false.
 
 //    Within the onTaskRemoved() method, you can perform any necessary cleanup or actions before the service is stopped. It's important to note that the system will automatically stop the service after this method returns, unless you have set stopWithTask to false.
+
+//    By default, a service in Android runs in the same process as the application's main thread. This means that if you do not specify the android:process attribute for a service in the manifest file, the service will run in the same process as the rest of your application's components, such as activities and broadcast receivers.
+
+//    When a service runs in the same process as the application, it shares the same memory space and resources. This allows the service to directly access the application's variables, objects, and other components.
+
+//    For example, if your application's package name is com.example.myapp, the service will run in the process with the same name: com.example.myapp. This is the default behavior if you haven't explicitly specified a different process name for the service.
+
 }
