@@ -1,27 +1,28 @@
 package com.example.commoncode.beforeproduction
 
 //points to checks in every build:
-//-> Update all dependencies and gradle, kotlin versions
-//-> checking ad ids of release and debug.
-//-> remote config values
-//-> analytics and crashlytics
-//-> version 33 supported or not
-//-> check billing class
-//-> fcm in manifest
-//-> in App rating
-//-> link text in share
-//-> notification icon
-//-> post notification android 33
-//-> update version
-//-> update all gradle libraries
-//-> link options in manifest
-//-> ads performance meta flag in manifest
-//-> check language split in gradle file if languages added in project
-//-> add Glide performance tag
-//-> check shrinkResources and minifyEnabled true in buildTypes release gradle file
-//-> check READ_MEDIA_IMAGES, READ_MEDIA_VIDEO and READ_MEDIA_AUDIO permission in Android 13 if these permissions are used in project
-//-> Add resizeableActivity, hardwareAccelerated, largeHeap, usesCleartextTraffic in manifest Application Tag
-//-> Check force update
+//(01)-> Update all dependencies and gradle, kotlin versions
+//(02)-> checking ad ids of release and debug.
+//(03)-> remote config values
+//(04)-> analytics and crashlytics
+//(05)-> version 33 supported or not
+//(06)-> check billing class
+//(07)-> fcm in manifest
+//(08)-> in App rating
+//(09)-> link text in share
+//(10)-> notification icon
+//(11)-> post notification android 33
+//(12)-> update version
+//(13)-> update all gradle libraries
+//(14)-> link options in manifest
+//(15)-> ads performance meta flag in manifest
+//(16)-> check language split in gradle file if languages added in project
+//(17)-> add Glide performance tag
+//(18)-> check shrinkResources and minifyEnabled true in buildTypes release gradle file
+//(19)-> check READ_MEDIA_IMAGES, READ_MEDIA_VIDEO and READ_MEDIA_AUDIO permission in Android 13 if these permissions are used in project
+//(20)-> Add resizeableActivity, hardwareAccelerated, largeHeap, usesCleartextTraffic in manifest Application Tag
+//(21)-> Check force update
+//(22)-> Convert all .png images to .webp
 
 /**
  * Manifest
@@ -89,8 +90,11 @@ package com.example.commoncode.beforeproduction
 //    }
 //}
 
+////added as workaround
 //lintOptions {
 //    checkReleaseBuilds true
+//    // Or, if you prefer, you can continue to check for errors in release builds,
+//    // but continue the build even when errors are found:
 //    abortOnError true
 //}
 //
@@ -111,6 +115,21 @@ package com.example.commoncode.beforeproduction
 //        def variantName = variant.name // e. g. freeDebug
 //                def apkName = appName + '_' + variantName + ' VCodes ' + versionCode + '  VName ' + versionName + ' _' + formattedDate + '.apk'
 //        outputFileName = apkName
+//    }
+//}
+
+//configurations.all {
+//    resolutionStrategy {
+//        force 'androidx.core:core-ktx:1.6.0'
+//    }
+//}
+
+//signingConfigs {
+//    release {
+//        storeFile file('F:\\Phone Cleaner\\app\\onetouch.jks')
+//        storePassword 'onetouch'
+//        keyAlias 'onetouch'
+//        keyPassword 'onetouch'
 //    }
 //}
 
