@@ -16,6 +16,7 @@ import android.os.Looper
 import android.os.SystemClock
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
@@ -121,6 +122,10 @@ object Extensions {
         return timeZoneIdList.any { it == timeZone }
     }
 
+    fun Any?.debug() {
+        Log.d("tag", "$this")
+    }
+
     /**
      * View's visibility extensions.
      */
@@ -135,6 +140,10 @@ object Extensions {
 
     fun View.invisible() {
         visibility = View.INVISIBLE
+    }
+
+    fun View.canShow(isVisible: Boolean) {
+        visibility = if (isVisible) View.VISIBLE else View.GONE
     }
 
     /**

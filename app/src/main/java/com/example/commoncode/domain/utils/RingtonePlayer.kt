@@ -1,19 +1,16 @@
-package com.scorpio.antitheftalarm.utils
+package com.example.commoncode.domain.utils
 
 import android.content.Context
 import android.media.AudioAttributes
 import android.media.AudioManager
 import android.media.MediaPlayer
-import android.media.session.MediaSession
 import android.net.Uri
 import android.util.Log
-import androidx.core.content.ContextCompat.getSystemService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import kotlin.coroutines.CoroutineContext
 
 
 class RingtonePlayer {

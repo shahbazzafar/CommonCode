@@ -72,6 +72,9 @@ package com.example.commoncode.beforeproduction
  * App Gradle
  */
 
+//https://developer.android.com/build/releases/gradle-plugin
+//https://firebase.google.com/support/release-notes/android
+
 // For crashlytics enable and disable
 //buildTypes {
 //    release {

@@ -1,11 +1,15 @@
 package com.example.commoncode.ui.activities
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.fragment.app.Fragment
 import com.example.commoncode.R
 import com.example.commoncode.domain.utils.Extensions.showToast
+import com.example.commoncode.domain.utils.LocaleHelper
+
 
 class MainActivity : AppCompatActivity() {
     //    private val adapter by lazy{
@@ -24,6 +28,43 @@ class MainActivity : AppCompatActivity() {
 //            }
 //        }
 
+    }
+
+//    override fun attachBaseContext(base: Context?) {
+//        super.attachBaseContext(base?.let { LocaleHelper.onAttach(it) })
+//    }
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+
+    }
+
+    override fun onAttachFragment(fragment: Fragment) {
+        super.onAttachFragment(fragment)
+
+    }
+
+    override fun onWindowAttributesChanged(params: WindowManager.LayoutParams?) {
+        super.onWindowAttributesChanged(params)
+    }
+
+    // * Note add this in MainActivity Manifest File  android:launchMode="singleTask"
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+
+        // Handle the new intent here
+        if (intent.hasExtra("extra_data")) {
+            val data = intent.getStringExtra("extra_data")
+            // Update your activity's UI or perform other actions based on the new data
+        }
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+    }
+
+    override fun onNightModeChanged(mode: Int) {
+        super.onNightModeChanged(mode)
     }
 
 //    private fun setRecyclerViewWithDiffUtilsAdapter(){
