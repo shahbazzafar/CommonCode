@@ -23,6 +23,8 @@ package com.example.commoncode.beforeproduction
 //(20)-> Add resizeableActivity, hardwareAccelerated, largeHeap, usesCleartextTraffic in manifest Application Tag
 //(21)-> Check force update
 //(22)-> Convert all .png images to .webp
+//(23)-> Feedback App ID
+//(24)-> No repeated toasts
 
 /**
  * Manifest
@@ -93,22 +95,23 @@ package com.example.commoncode.beforeproduction
 //    }
 //}
 
-////added as workaround
+// Note: For checking release build
 //lintOptions {
+//    This option controls whether lint runs on release builds. It's generally a good idea to run lint on release builds to catch potential issues before releasing your app.
 //    checkReleaseBuilds true
-//    // Or, if you prefer, you can continue to check for errors in release builds,
-//    // but continue the build even when errors are found:
+//    This option determines whether the build process should be aborted if any critical issues are found by the lint tool. If set to true, the build will fail if lint reports any issues marked as "error."
 //    abortOnError true
 //}
 //
 //
+// Note: to avoid splitting languages (by default it will split language in bundle and user will only be able to download app with language of his/her region.)
 //bundle {
 //    language {
 //        enableSplit = false
 //    }
 //}
 //
-//
+//This code snippet provide meaningful and informative APK file names
 //android.applicationVariants.all { variant ->
 //    variant.outputs.all {
 //        def appName = "AntiTheftAlarm"
