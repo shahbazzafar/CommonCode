@@ -1,4 +1,4 @@
-package com.example.commoncode.dialogs
+package com.example.commoncode.dialogs.dialogs
 
 //import android.app.Dialog
 //import android.graphics.Color

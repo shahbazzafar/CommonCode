@@ -1,4 +1,4 @@
-package com.example.commoncode.dialogs
+package com.example.commoncode.dialogs.dialogs
 
 import android.app.Activity
 import android.app.Dialog
@@ -21,7 +21,7 @@ object ProgressDialog {
                 dialog?.requestWindowFeature(Window.FEATURE_NO_TITLE)
                 dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
                 dialog?.setCancelable(false)
-                dialog?.setContentView(R.layout.dialog_loading)
+                dialog?.setContentView(R.layout.dialog_loading_old)
                 val textView = dialog?.findViewById<TextView>(R.id.progress_text)
                 if (title != null) {
                     textView?.text = title
