@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/videosFragment"-->
+<!--        android:icon="@drawable/ic_bottom_video_icon"-->
+<!--        android:title="@string/video" />-->
+<!--    <item-->
+<!--        android:id="@+id/screenShotFragment"-->
+<!--        android:icon="@drawable/ic_bottom_screenshot_icon"-->
+<!--        android:title="@string/screenshot" />-->
+<!--    <item-->
+<!--        android:id="@+id/recordingFragment"-->
+<!--        android:icon="@drawable/ic_bottom_camera_icon"-->
+<!--        android:title="@string/camera" />-->
+<!--    <item-->
+<!--        android:id="@+id/editFragment"-->
+<!--        android:icon="@drawable/ic_bottom_edit_icon"-->
+<!--        android:title="@string/edit" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_settingsFragment"-->
+<!--        android:icon="@drawable/ic_bottom_settings_icon"-->
+<!--        android:title="@string/settings" />-->
+</menu>

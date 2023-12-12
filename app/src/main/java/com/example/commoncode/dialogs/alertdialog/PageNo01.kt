@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.appcompat.app.AlertDialog
 //
 //fun showRenameDialog(context: Context) {
-//    val view: DialogSetAsDeafultBinding = DialogSetAsDeafultBinding.inflate(layoutInflater)
+//    val view: DialogSetAsDefaultBinding = DialogSetAsDefaultBinding.inflate(layoutInflater)
 //    val builder: AlertDialog.Builder = AlertDialog.Builder(context, R.style.CustomAlertDialog).setView(view.root)
 //    val dialog: AlertDialog = builder.create()
 //

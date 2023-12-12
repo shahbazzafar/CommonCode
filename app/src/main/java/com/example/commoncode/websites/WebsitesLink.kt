@@ -9,3 +9,4 @@ package com.example.commoncode.websites
 /**
  * Others
  */
+//https://androidgeek.co/mastering-kotlin-a-comprehensive-guide-c70220318962
