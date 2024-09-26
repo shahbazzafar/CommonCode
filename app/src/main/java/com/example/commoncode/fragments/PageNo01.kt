@@ -1,13 +1,33 @@
 package com.example.commoncode.fragments
 
+import android.app.Activity
 import android.os.Bundle
 import android.os.SystemClock
+import android.util.Log
+import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.os.bundleOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+//@Inject
+//lateinit var binding: FragmentAudiosBinding
+//
+//private var isFirstLoaded: Boolean = false
+//
+////private var rootView: ViewGroup? = null
+
+//if (rootView == null) {
+//
+//    isFirstLoaded = true
+//    rootView = binding.root
+//} else {
+//    isFirstLoaded = false
+//}
+//
+//return rootView as ViewGroup
 
 //(1)
 //Note: For back to previous fragment

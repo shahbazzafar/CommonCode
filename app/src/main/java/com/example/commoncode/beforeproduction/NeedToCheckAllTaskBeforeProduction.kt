@@ -8,7 +8,7 @@ package com.example.commoncode.beforeproduction
 //(05)-> version 33 supported or not
 //(06)-> check billing class
 //(07)-> fcm in manifest
-//(08)-> in App rating
+//(08)-> in App rating (on completion of core task, 2nd time app open show on home, or any other best placement as per app.) Rating should be always greater then 3 will go to play store else redirect it to Feedback screen.
 //(09)-> link text in share
 //(10)-> notification icon
 //(11)-> post notification android 33
@@ -21,10 +21,22 @@ package com.example.commoncode.beforeproduction
 //(18)-> check shrinkResources and minifyEnabled true in buildTypes release gradle file
 //(19)-> check READ_MEDIA_IMAGES, READ_MEDIA_VIDEO and READ_MEDIA_AUDIO permission in Android 13 if these permissions are used in project
 //(20)-> Add resizeableActivity, hardwareAccelerated, largeHeap, usesCleartextTraffic in manifest Application Tag
-//(21)-> Check force update
+//(21)-> Check Force update (do not use flexible update)
 //(22)-> Convert all .png images to .webp
 //(23)-> Feedback App ID
 //(24)-> No repeated toasts
+
+/**
+ * General Remote Config for Ads
+ */
+
+//(1) Keep All ID's on Remote
+//(2) Keep all ads on off on Remote
+//(3) Keep App Open Capping Time on Remote Default 10 Sec ( Minium allowable input 0)
+//(4) Keep Interstitial Ads Capping time on Remote Default 30 Sec ( Minimum input allowable 10 Sec)
+//(5) Add Border on all natives ( Via remote Key On Off ) ( Single key)
+//(6) Border Color on all native on remote ( Single key)
+//(7) Native CTA Color all Native ( Single key On remote )
 
 /**
  * Manifest
